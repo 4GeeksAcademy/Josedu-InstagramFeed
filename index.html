@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://kit.fontawesome.com/67eede00f4.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <link rel="stylesheet" type="text/css" href="styles.css">
+    <title>Document</title>
+</head>
+<body>
+    <div class="container-fluid">
+            <div class="row bg-light p-3">
+                <div class="col-md">
+                    <h4><i class="fa-brands fa-instagram"></i> Instagram</h4>
+                </div>
+                <div class="col-md d-flex justify-content-end">
+                    <button type="button" class="btn btn-success mx-3" data-toggle="modal" data-target="#modalBut">Create a new post</button>
+                    <div class="dropdown">
+                        <button class="btn btn-secondary dropdown-toggle" type="button" id="boton-Menu" data-toggle="dropdown"><i class="fa-solid fa-gear"></i>
+                        </button>
+                        <ul class="dropdown-menu dropdown-menu-right" aria-labelledby="boton-Menu">
+                            <il><a class="dropdown-item" href="#">Profile</a></il>
+                            <il><a class="dropdown-item" href="#">Accesibility</a></il>
+                            <il><a class="dropdown-item" href="#">Privacy and data</a></il>
+                            <div class="dropdown-divider"></div>
+                            <li><a class="dropdown-item text-danger" href="#">Log out</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        <div class="modal fade" id="modalBut" tabindex="-1" aria-labelledby="modal-title" aria-hidden="true">
+            <div class="modal-dialog">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h5 class="modal-title" id="modal-title">Modal title</h5>
+                        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                            <i class="fa-solid fa-xmark"></i>
+                        </button>
+                    </div>
+                    <div class="modal-body">
+                        <label for="caption" class="form-label">Caption:</label>
+                        <textarea class="form-control" id="form-label" rows="3"></textarea>
+                        <div>
+                            <button id="camera" class="btn btn-sm border my-2"><i class="fa-solid fa-camera"></i></button>
+                            <button id="location" class="btn btn-sm border my-2 mx-1"><i class="fa-solid fa-location-dot"></i></button>
+                        </div>
+                    </div>
+                    <div class="modal-footer">
+                        <button class="btn btn-secondary" data-dismiss="modal">Close</button>
+                        <button class="btn btn-success">Publish</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="container-fluid">
+        <nav>
+            <div class="nav nav-tabs d-flex justify-content-center" id="nav-tab" role="tablist">
+                <a class="nav-link active" id="multiPhoto" data-toggle="tab" data-target="#multi" type="button" role="tab" aria-controls="multi" aria-selected="true"><i class="fa-solid fa-table-cells"></i></a>
+                <a class="nav-link" id="onlyPhoto" data-toggle="tab" data-target="#only" type="button" role="tab" aria-controls="only" aria-selected="false"><i class="fa-solid fa-square"></i></a>
+            </div>
+        </nav>
+
+        <div class="tab-content" id="nav-tabContent">
+            <div class="tab-pane fade show active p-3" id="multi" role="tabpanel" aria-labelledby="multiPhoto">
+                <div class="row">
+                    <div class="col-4 d-flex justify-content-center p-1"> <img src="https://images.unsplash.com/photo-1720709734276-cd14a216bcad?q=80&w=1964&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" class="imagenMult" alt="ramdon"></div>
+                    <div class="col-4 d-flex justify-content-center p-1"> <img src="https://images.unsplash.com/photo-1720790985510-bcab909c7b9a?q=80&w=1887&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" class="imagenMult" alt="ramdon"></div>
+                    <div class="col-4 d-flex justify-content-center p-1"> <img src="https://images.unsplash.com/photo-1720789051356-563d1931eec6?q=80&w=1887&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" class="imagenMult" alt="ramdon"></div>
+                </div>
+                <div class="row">
+                    <div class="col-4 d-flex justify-content-center p-1"> <img src="https://plus.unsplash.com/premium_photo-1663838843887-d664812f1a85?q=80&w=1770&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" class="imagenMult" alt="ramdon"></div>
+                    <div class="col-4 d-flex justify-content-center p-1"> <img src="https://images.unsplash.com/photo-1720766595377-b413ce3a6478?q=80&w=1886&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" class="imagenMult" alt="ramdon"></div>
+                    <div class="col-4 d-flex justify-content-center p-1"> <img src="https://plus.unsplash.com/premium_photo-1719933323235-dff2a0ed0498?q=80&w=1770&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" class="imagenMult" alt="ramdon"></div>
+                </div>
+                <div class="row">
+                    <div class="col-4 d-flex justify-content-center p-1"> <img src="https://images.unsplash.com/photo-1720712738661-9c0dcb92f06d?q=80&w=1770&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" class="imagenMult" alt="ramdon"></div>
+                    <div class="col-4 d-flex justify-content-center p-1"> <img src="https://images.unsplash.com/photo-1720565861831-693be6962331?q=80&w=1770&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" class="imagenMult" alt="ramdon"></div>
+                    <div class="col-4 d-flex justify-content-center p-1"> <img src="https://images.unsplash.com/photo-1720545475861-8904ead41edd?q=80&w=1887&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" class="imagenMult" alt="ramdon"></div>
+                </div>
+            </div>
+            <div class="tab-pane fade p-3" id="only" role="tabpanel" aria-labelledby="onlyPhoto">
+               <div class="container col-6 border d-flex justify-content-center">
+                    <div class="row">
+                        <div class="col d-flex justify-content-between">
+                            <h4 class="m-2">Nice!</h4>
+                            <p class="m-2">04/09</p>
+                        </div>
+                        <img src="https://images.unsplash.com/photo-1720565861831-693be6962331?q=80&w=1770&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" class="imagenMult" alt="ramdon">
+                        <p><strong>137 Likes</strong></p>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Iure amet vel natus ut perferendis impedit?</p>
+                    </div>
+               </div>
+               <div class="container mt-2 col-6 border d-flex justify-content-center">
+                    <div class="row">
+                    <div class="col d-flex justify-content-between">
+                        <h4 class="m-2">Thankful</h4>
+                        <p class="m-2">09/10</p>
+                    </div>
+                    <img src="https://images.unsplash.com/photo-1720712738661-9c0dcb92f06d?q=80&w=1770&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" class="imagenMult" alt="ramdon">
+                    <p><strong>6.712 Likes</strong></p>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Iure amet vel natus ut perferendis impedit?</p>
+                    </div>
+                </div>
+                <div class="container mt-2 col-6 border d-flex justify-content-center">
+                    <div class="row">
+                    <div class="col d-flex justify-content-between">
+                        <h4 class="m-2">Awesome</h4>
+                        <p class="m-2">14/12</p>
+                    </div>
+                    <img src="https://images.unsplash.com/photo-1720789051356-563d1931eec6?q=80&w=1887&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" class="imagenMult" alt="ramdon">
+                    <p><strong>12.223 Likes</strong></p>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Iure amet vel natus ut perferendis impedit?</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.12.9/dist/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+</body>
+</html>
